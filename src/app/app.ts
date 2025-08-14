@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
 import { ColorPaletteComponent } from './shared/components/color-palette/color-palette';
 import { TypographyComponent } from './shared/components/typography/typography';
+import { ButtonShowcaseComponent } from './shared/components/button-showcase/button-showcase';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ColorPaletteComponent, TypographyComponent],
+  imports: [ColorPaletteComponent, TypographyComponent, ButtonShowcaseComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class AppComponent {
   title = 'Figma Component Library';
-  
-  // Track which sections are expanded
+
   expandedSections: { [key: string]: boolean } = {
-    'colors': true,  // Start with colors expanded
+    'colors': true,
     'typography': false,
-    'buttons': false,
+    'buttons': true,
     'cards': false,
     'forms': false,
     'layout': false,

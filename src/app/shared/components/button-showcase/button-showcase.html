@@ -1,0 +1,169 @@
+<div class="button-showcase">
+  <div class="button-section">
+    <h3>Primary Buttons</h3>
+    <div class="button-grid">
+      <div class="button-example" *ngFor="let button of buttonExamples.slice(0, 4)">
+        <app-button
+          [variant]="button.variant"
+          [size]="button.size"
+          [disabled]="button.disabled || false"
+          [icon]="button.icon"
+          [iconPosition]="button.iconPosition || 'left'"
+          [fullWidth]="button.fullWidth || false"
+          (clicked)="onButtonClick(button)">
+          {{ button.label }}
+        </app-button>
+        <div class="button-info">
+          <div class="button-name">{{ button.label }}</div>
+          <div class="button-properties">
+            <span class="property">variant: {{ button.variant }}</span>
+            <span class="property">size: {{ button.size }}</span>
+            <span class="property" *ngIf="button.disabled">disabled: true</span>
+            <span class="property" *ngIf="button.icon">icon: {{ button.icon }}</span>
+            <span class="property" *ngIf="button.fullWidth">fullWidth: true</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-section">
+    <h3>Secondary Buttons</h3>
+    <div class="button-grid">
+      <div class="button-example" *ngFor="let button of buttonExamples.slice(4, 8)">
+        <app-button
+          [variant]="button.variant"
+          [size]="button.size"
+          [disabled]="button.disabled || false"
+          [icon]="button.icon"
+          [iconPosition]="button.iconPosition || 'left'"
+          [fullWidth]="button.fullWidth || false"
+          (clicked)="onButtonClick(button)">
+          {{ button.label }}
+        </app-button>
+        <div class="button-info">
+          <div class="button-name">{{ button.label }}</div>
+          <div class="button-properties">
+            <span class="property">variant: {{ button.variant }}</span>
+            <span class="property">size: {{ button.size }}</span>
+            <span class="property" *ngIf="button.disabled">disabled: true</span>
+            <span class="property" *ngIf="button.icon">icon: {{ button.icon }}</span>
+            <span class="property" *ngIf="button.fullWidth">fullWidth: true</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-section">
+    <h3>Text Buttons</h3>
+    <div class="button-grid">
+      <div class="button-example" *ngFor="let button of buttonExamples.slice(8, 12)">
+        <app-button
+          [variant]="button.variant"
+          [size]="button.size"
+          [disabled]="button.disabled || false"
+          [icon]="button.icon"
+          [iconPosition]="button.iconPosition || 'left'"
+          [fullWidth]="button.fullWidth || false"
+          (clicked)="onButtonClick(button)">
+          {{ button.label }}
+        </app-button>
+        <div class="button-info">
+          <div class="button-name">{{ button.label }}</div>
+          <div class="button-properties">
+            <span class="property">variant: {{ button.variant }}</span>
+            <span class="property">size: {{ button.size }}</span>
+            <span class="property" *ngIf="button.disabled">disabled: true</span>
+            <span class="property" *ngIf="button.icon">icon: {{ button.icon }}</span>
+            <span class="property" *ngIf="button.fullWidth">fullWidth: true</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-section">
+    <h3>Status Buttons</h3>
+    <div class="button-grid">
+      <div class="button-example" *ngFor="let button of buttonExamples.slice(12, 24)">
+        <app-button
+          [variant]="button.variant"
+          [size]="button.size"
+          [disabled]="button.disabled || false"
+          [icon]="button.icon"
+          [iconPosition]="button.iconPosition || 'left'"
+          [fullWidth]="button.fullWidth || false"
+          (clicked)="onButtonClick(button)">
+          {{ button.label }}
+        </app-button>
+        <div class="button-info">
+          <div class="button-name">{{ button.label }}</div>
+          <div class="button-properties">
+            <span class="property">variant: {{ button.variant }}</span>
+            <span class="property">size: {{ button.size }}</span>
+            <span class="property" *ngIf="button.disabled">disabled: true</span>
+            <span class="property" *ngIf="button.icon">icon: {{ button.icon }}</span>
+            <span class="property" *ngIf="button.fullWidth">fullWidth: true</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-section">
+    <h3>Icon Buttons</h3>
+    <div class="button-grid">
+      <div class="button-example" *ngFor="let button of buttonExamples.slice(24, 28)">
+        <app-button
+          [variant]="button.variant"
+          [size]="button.size"
+          [disabled]="button.disabled || false"
+          [icon]="button.icon"
+          [iconPosition]="button.iconPosition || 'left'"
+          [fullWidth]="button.fullWidth || false"
+          (clicked)="onButtonClick(button)">
+          {{ button.label }}
+        </app-button>
+        <div class="button-info">
+          <div class="button-name">{{ button.label }}</div>
+          <div class="button-properties">
+            <span class="property">variant: {{ button.variant }}</span>
+            <span class="property">size: {{ button.size }}</span>
+            <span class="property" *ngIf="button.disabled">disabled: true</span>
+            <span class="property" *ngIf="button.icon">icon: {{ button.icon }}</span>
+            <span class="property" *ngIf="button.fullWidth">fullWidth: true</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-section">
+    <h3>Full Width Buttons</h3>
+    <div class="button-grid button-grid--full-width">
+      <div class="button-example" *ngFor="let button of buttonExamples.slice(28, 30)">
+        <app-button
+          [variant]="button.variant"
+          [size]="button.size"
+          [disabled]="button.disabled || false"
+          [icon]="button.icon"
+          [iconPosition]="button.iconPosition || 'left'"
+          [fullWidth]="button.fullWidth || false"
+          (clicked)="onButtonClick(button)">
+          {{ button.label }}
+        </app-button>
+        <div class="button-info">
+          <div class="button-name">{{ button.label }}</div>
+          <div class="button-properties">
+            <span class="property">variant: {{ button.variant }}</span>
+            <span class="property">size: {{ button.size }}</span>
+            <span class="property" *ngIf="button.disabled">disabled: true</span>
+            <span class="property" *ngIf="button.icon">icon: {{ button.icon }}</span>
+            <span class="property" *ngIf="button.fullWidth">fullWidth: true</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

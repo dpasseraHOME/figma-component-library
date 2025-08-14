@@ -1,0 +1,93 @@
+.button-showcase {
+  .button-section {
+    margin-bottom: var(--spacing-xl);
+    
+    h3 {
+      margin: 0 0 var(--spacing-md) 0;
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: var(--spacing-sm);
+    }
+  }
+
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    
+    &--full-width {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .button-example {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    background-color: var(--bg-primary);
+    transition: box-shadow 0.2s ease;
+    
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .button-info {
+    padding: var(--spacing-sm);
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    
+    .button-name {
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-sm);
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-xs);
+    }
+    
+    .button-properties {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-xs);
+      
+      .property {
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 10px;
+        color: var(--text-secondary);
+        background-color: var(--bg-tertiary);
+        padding: 2px 6px;
+        border-radius: var(--border-radius-sm);
+        
+        &:first-child {
+          color: var(--text-tertiary);
+          font-weight: var(--font-weight-medium);
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .button-showcase {
+    .button-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-sm);
+    }
+    
+    .button-example {
+      .button-info {
+        padding: var(--spacing-xs);
+        
+        .button-properties {
+          .property {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}
