@@ -1,0 +1,134 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>Figma Component Library</h1>
+    <p>Design system components extracted from Figma</p>
+  </header>
+  
+  <main class="app-main">
+    <aside class="sidebar">
+      <nav class="component-nav">
+        <h3>Components</h3>
+        <ul>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#layout">Layout</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <section class="component-display">
+      <div class="component-section">
+        <div class="section-header" (click)="toggleSection('colors')">
+          <h2 id="colors">Colors</h2>
+          <button class="toggle-button" [class.expanded]="isExpanded('colors')">
+            <span class="toggle-icon">{{ isExpanded('colors') ? '−' : '+' }}</span>
+          </button>
+        </div>
+        <div class="section-content" [class.expanded]="isExpanded('colors')">
+          <app-color-palette></app-color-palette>
+        </div>
+      </div>
+      
+      <div class="component-section">
+        <div class="section-header" (click)="toggleSection('typography')">
+          <h2 id="typography">Typography</h2>
+          <button class="toggle-button" [class.expanded]="isExpanded('typography')">
+            <span class="toggle-icon">{{ isExpanded('typography') ? '−' : '+' }}</span>
+          </button>
+        </div>
+        <div class="section-content" [class.expanded]="isExpanded('typography')">
+          <app-typography></app-typography>
+        </div>
+      </div>
+      
+      <div class="component-section">
+        <div class="section-header" (click)="toggleSection('buttons')">
+          <h2 id="buttons">Buttons</h2>
+          <button class="toggle-button" [class.expanded]="isExpanded('buttons')">
+            <span class="toggle-icon">{{ isExpanded('buttons') ? '−' : '+' }}</span>
+          </button>
+        </div>
+        <div class="section-content" [class.expanded]="isExpanded('buttons')">
+          <div class="component-grid">
+            <!-- Button components will be added here -->
+            <div class="component-placeholder">
+              <p>Button components will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="component-section">
+        <div class="section-header" (click)="toggleSection('cards')">
+          <h2 id="cards">Cards</h2>
+          <button class="toggle-button" [class.expanded]="isExpanded('cards')">
+            <span class="toggle-icon">{{ isExpanded('cards') ? '−' : '+' }}</span>
+          </button>
+        </div>
+        <div class="section-content" [class.expanded]="isExpanded('cards')">
+          <div class="component-grid">
+            <!-- Card components will be added here -->
+            <div class="component-placeholder">
+              <p>Card components will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="component-section">
+        <div class="section-header" (click)="toggleSection('forms')">
+          <h2 id="forms">Forms</h2>
+          <button class="toggle-button" [class.expanded]="isExpanded('forms')">
+            <span class="toggle-icon">{{ isExpanded('forms') ? '−' : '+' }}</span>
+          </button>
+        </div>
+        <div class="section-content" [class.expanded]="isExpanded('forms')">
+          <div class="component-grid">
+            <!-- Form components will be added here -->
+            <div class="component-placeholder">
+              <p>Form components will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="component-section">
+        <div class="section-header" (click)="toggleSection('layout')">
+          <h2 id="layout">Layout</h2>
+          <button class="toggle-button" [class.expanded]="isExpanded('layout')">
+            <span class="toggle-icon">{{ isExpanded('layout') ? '−' : '+' }}</span>
+          </button>
+        </div>
+        <div class="section-content" [class.expanded]="isExpanded('layout')">
+          <div class="component-grid">
+            <!-- Layout components will be added here -->
+            <div class="component-placeholder">
+              <p>Layout components will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="component-section">
+        <div class="section-header" (click)="toggleSection('navigation')">
+          <h2 id="navigation">Navigation</h2>
+          <button class="toggle-button" [class.expanded]="isExpanded('navigation')">
+            <span class="toggle-icon">{{ isExpanded('navigation') ? '−' : '+' }}</span>
+          </button>
+        </div>
+        <div class="section-content" [class.expanded]="isExpanded('navigation')">
+          <div class="component-grid">
+            <!-- Navigation components will be added here -->
+            <div class="component-placeholder">
+              <p>Navigation components will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

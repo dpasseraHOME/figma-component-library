@@ -1,0 +1,154 @@
+// Design System Variables
+// Extracted from Figma Design System
+
+// Primary Colors (Greys)
+:root {
+  --primary-grey-0: #27323F;
+  --primary-grey-1: #3E4A58;
+  --primary-grey-2: #576370;
+  --primary-grey-3: #586471;
+  --primary-grey-4: #5C6876;
+  --primary-grey-5: #5D6F83;
+  --primary-grey-6: #687E95;
+  --primary-grey-7: #7A8FA5;
+  --primary-grey-8: #B7C1CD;
+  --primary-grey-9: #FAFCFE;
+  --primary-grey-9a: #F9FAFC;
+  --primary-white: #FFFFFF;
+  --primary-dark-grey: #30333D;
+}
+
+// Secondary Colors (Blues)
+:root {
+  --secondary-blue-0: #1E6DB0;
+  --secondary-blue-1: #267AC5;
+  --secondary-blue-2: #3A9BFC;
+  --secondary-blue-2-65: #3A9BFC;
+  --secondary-blue-3: #C4E1FE;
+  --secondary-blue-4: #EBF5FF;
+}
+
+// Accent Colors (Orange, Red, Yellow, Green)
+:root {
+  --accent-orange-0: #F29049;
+  --accent-red-1: #CC4343;
+  --accent-red-2: #DA3838;
+  --accent-red-3: #EB3C3C;
+  --accent-yellow-0: #F2C349;
+  --accent-yellow-1: #F9F1DF;
+  --accent-green-0: #3D996D;
+  --accent-green-1: #47B27F;
+  --accent-green-2: #51CC91;
+  --accent-green-3: #5BE5A3;
+  --accent-green-4: #96FACA;
+}
+
+// Chart Colors
+:root {
+  --chart-1: #84D2E4;
+  --chart-2: #FF8080;
+  --chart-3: #74D6A7;
+  --chart-4: #F7D3A7;
+  --chart-5: #A9B0EB;
+  --chart-6: #C0C9D4;
+}
+
+// Spot Colors (BlueGreys and Special Greys)
+:root {
+  --spot-grey-0b: #2F353C;
+  --spot-grey-0c: #383B45;
+  --spot-grey-0d: #373E46;
+  --spot-grey-1b: #3E4752;
+  --spot-grey-1c: #3D4854;
+  --spot-grey-7b: #9297A9;
+  --spot-bluegrey-0: #A1B8CE;
+  --spot-bluegrey-1: #ADC0D3;
+  --spot-bluegrey-2: #C4D4E2;
+  --spot-bluegrey-3: #BDD4EE;
+}
+
+// Typography - Headings
+:root {
+  --font-h1: 700 24px/32px 'Inter', sans-serif;
+  --font-h2: 700 20px/28px 'Inter', sans-serif;
+  --font-h3: 600 20px/28px 'Inter', sans-serif;
+  --font-h4: 600 16px/24px 'Inter', sans-serif;
+  --font-h5: 600 14px/20px 'Inter', sans-serif;
+  --font-h6: 500 14px/20px 'Inter', sans-serif;
+  --font-h7: 400 12px/16px 'Inter', sans-serif;
+  --font-h8: 600 10px/14px 'Inter', sans-serif;
+}
+
+// Typography - Labels
+:root {
+  --font-label-1: 600 15px/16px 'Inter', sans-serif;
+  --font-label-2: 500 14px/16px 'Inter', sans-serif;
+  --font-label-3: 500 14px/18px 'Inter', sans-serif;
+  --font-label-4: 500 13px/18px 'Inter', sans-serif;
+  --font-label-5: 600 13px/20px 'Inter', sans-serif;
+  --font-label-5e: 700 13px/20px 'Inter', sans-serif;
+  --font-label-6: 400 13px/20px 'Inter', sans-serif;
+  --font-label-7: 400 13px/18px 'Inter', sans-serif;
+  --font-label-8: 600 12px/16px 'Inter', sans-serif;
+}
+
+// Typography - Navigation
+:root {
+  --font-nav-1: 700 16px/24px 'Inter', sans-serif;
+  --font-nav-2: 600 16px/24px 'Inter', sans-serif;
+}
+
+// Typography - Body Text
+:root {
+  --font-base: 400 13px/19px 'Inter', sans-serif;
+  --font-base-emphasized: 500 13px/19px 'Inter', sans-serif;
+  --font-base-strong: 600 13px/19px 'Inter', sans-serif;
+  --font-blurb: 400 14px/20px 'Inter', sans-serif;
+}
+
+// Semantic Color Mappings
+:root {
+  // Text colors
+  --text-primary: var(--primary-grey-0);
+  --text-secondary: var(--primary-grey-2);
+  --text-tertiary: var(--primary-grey-4);
+  --text-inverse: var(--primary-white);
+  
+  // Background colors
+  --bg-primary: var(--primary-white);
+  --bg-secondary: var(--primary-grey-9);
+  --bg-tertiary: var(--primary-grey-8);
+  
+  // Border colors
+  --border-color: var(--primary-grey-8);
+  --border-color-light: var(--primary-grey-9a);
+  
+  // Interactive colors
+  --interactive-primary: var(--secondary-blue-2);
+  --interactive-hover: var(--secondary-blue-1);
+  --interactive-active: var(--secondary-blue-0);
+  
+  // Status colors
+  --status-success: var(--accent-green-2);
+  --status-warning: var(--accent-yellow-0);
+  --status-error: var(--accent-red-2);
+  --status-info: var(--secondary-blue-2);
+}
+
+// Spacing
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+}
+
+// Border radius
+:root {
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+}

@@ -1,0 +1,94 @@
+.color-palette {
+  .color-section {
+    margin-bottom: var(--spacing-xl);
+    
+    h3 {
+      margin: 0 0 var(--spacing-md) 0;
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: var(--spacing-sm);
+    }
+  }
+
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .color-swatch {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    background-color: var(--bg-primary);
+    transition: box-shadow 0.2s ease;
+    
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .color-preview {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .color-info {
+    padding: var(--spacing-sm);
+    
+    .color-name {
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-sm);
+      color: var(--text-primary);
+      margin-bottom: var(--spacing-xs);
+    }
+    
+    .color-value {
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+      font-size: 11px;
+      color: var(--text-secondary);
+      margin-bottom: var(--spacing-xs);
+    }
+    
+    .color-variable {
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+      font-size: 10px;
+      color: var(--text-tertiary);
+      word-break: break-all;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .color-palette {
+    .color-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: var(--spacing-sm);
+    }
+    
+    .color-swatch {
+      .color-preview {
+        height: 50px;
+      }
+      
+      .color-info {
+        padding: var(--spacing-xs);
+        
+        .color-name {
+          font-size: 12px;
+        }
+        
+        .color-value,
+        .color-variable {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}

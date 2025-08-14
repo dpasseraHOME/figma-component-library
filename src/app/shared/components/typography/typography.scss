@@ -1,0 +1,99 @@
+.typography {
+  .typography-section {
+    margin-bottom: var(--spacing-xl);
+    
+    h3 {
+      margin: 0 0 var(--spacing-md) 0;
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-primary);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: var(--spacing-sm);
+    }
+  }
+
+  .typography-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .typography-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    background-color: var(--bg-primary);
+    transition: box-shadow 0.2s ease;
+    
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .typography-example {
+    padding: var(--spacing-md);
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+    word-wrap: break-word;
+  }
+
+  .typography-info {
+    padding: var(--spacing-sm);
+    
+    .typography-properties {
+      margin-bottom: var(--spacing-xs);
+      
+      .property {
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 10px;
+        color: var(--text-secondary);
+        margin-bottom: 2px;
+        
+        .property-name {
+          color: var(--text-tertiary);
+          font-weight: var(--font-weight-medium);
+        }
+      }
+    }
+    
+    .typography-variable {
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+      font-size: 9px;
+      color: var(--text-tertiary);
+      word-break: break-all;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .typography {
+    .typography-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-sm);
+    }
+    
+    .typography-item {
+      .typography-example {
+        padding: var(--spacing-sm);
+      }
+      
+      .typography-info {
+        padding: var(--spacing-xs);
+        
+        .typography-properties {
+          .property {
+            font-size: 9px;
+          }
+        }
+        
+        .typography-variable {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+<div class="color-palette">
+  <div class="color-section">
+    <h3>Primary Colors (Greys)</h3>
+    <div class="color-grid">
+      <div class="color-swatch" *ngFor="let color of primaryColors">
+        <div class="color-preview" [style.background-color]="color.value"></div>
+        <div class="color-info">
+          <div class="color-name">{{ color.name }}</div>
+          <div class="color-value">{{ color.value }}</div>
+          <div class="color-variable">{{ color.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="color-section">
+    <h3>Secondary Colors (Blues)</h3>
+    <div class="color-grid">
+      <div class="color-swatch" *ngFor="let color of secondaryColors">
+        <div class="color-preview" [style.background-color]="color.value"></div>
+        <div class="color-info">
+          <div class="color-name">{{ color.name }}</div>
+          <div class="color-value">{{ color.value }}</div>
+          <div class="color-variable">{{ color.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="color-section">
+    <h3>Accent Colors</h3>
+    <div class="color-grid">
+      <div class="color-swatch" *ngFor="let color of accentColors">
+        <div class="color-preview" [style.background-color]="color.value"></div>
+        <div class="color-info">
+          <div class="color-name">{{ color.name }}</div>
+          <div class="color-value">{{ color.value }}</div>
+          <div class="color-variable">{{ color.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="color-section">
+    <h3>Chart Colors</h3>
+    <div class="color-grid">
+      <div class="color-swatch" *ngFor="let color of chartColors">
+        <div class="color-preview" [style.background-color]="color.value"></div>
+        <div class="color-info">
+          <div class="color-name">{{ color.name }}</div>
+          <div class="color-value">{{ color.value }}</div>
+          <div class="color-variable">{{ color.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="color-section">
+    <h3>Spot Colors</h3>
+    <div class="color-grid">
+      <div class="color-swatch" *ngFor="let color of spotColors">
+        <div class="color-preview" [style.background-color]="color.value"></div>
+        <div class="color-info">
+          <div class="color-name">{{ color.name }}</div>
+          <div class="color-value">{{ color.value }}</div>
+          <div class="color-variable">{{ color.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

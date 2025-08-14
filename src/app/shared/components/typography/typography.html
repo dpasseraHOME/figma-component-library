@@ -1,0 +1,81 @@
+<div class="typography">
+  <div class="typography-section">
+    <h3>Headings</h3>
+    <div class="typography-grid">
+      <div class="typography-item" *ngFor="let style of headings">
+        <div class="typography-example" [ngStyle]="getFontStyle(style)">
+          {{ style.example }}
+        </div>
+        <div class="typography-info">
+          <div class="typography-properties">
+            <div class="property"><span class="property-name">font-family:</span> {{ style.family }}</div>
+            <div class="property"><span class="property-name">font-size:</span> {{ style.size }}</div>
+            <div class="property"><span class="property-name">font-weight:</span> {{ style.weight }}</div>
+            <div class="property"><span class="property-name">line-height:</span> {{ style.lineHeight }}</div>
+          </div>
+          <div class="typography-variable">{{ style.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="typography-section">
+    <h3>Labels</h3>
+    <div class="typography-grid">
+      <div class="typography-item" *ngFor="let style of labels">
+        <div class="typography-example" [ngStyle]="getFontStyle(style)">
+          {{ style.example }}
+        </div>
+        <div class="typography-info">
+          <div class="typography-properties">
+            <div class="property"><span class="property-name">font-family:</span> {{ style.family }}</div>
+            <div class="property"><span class="property-name">font-size:</span> {{ style.size }}</div>
+            <div class="property"><span class="property-name">font-weight:</span> {{ style.weight }}</div>
+            <div class="property"><span class="property-name">line-height:</span> {{ style.lineHeight }}</div>
+          </div>
+          <div class="typography-variable">{{ style.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="typography-section">
+    <h3>Navigation</h3>
+    <div class="typography-grid">
+      <div class="typography-item" *ngFor="let style of navigation">
+        <div class="typography-example" [ngStyle]="getFontStyle(style)">
+          {{ style.example }}
+        </div>
+        <div class="typography-info">
+          <div class="typography-properties">
+            <div class="property"><span class="property-name">font-family:</span> {{ style.family }}</div>
+            <div class="property"><span class="property-name">font-size:</span> {{ style.size }}</div>
+            <div class="property"><span class="property-name">font-weight:</span> {{ style.weight }}</div>
+            <div class="property"><span class="property-name">line-height:</span> {{ style.lineHeight }}</div>
+          </div>
+          <div class="typography-variable">{{ style.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="typography-section">
+    <h3>Body Text</h3>
+    <div class="typography-grid">
+      <div class="typography-item" *ngFor="let style of bodyText">
+        <div class="typography-example" [ngStyle]="getFontStyle(style)">
+          {{ style.example }}
+        </div>
+        <div class="typography-info">
+          <div class="typography-properties">
+            <div class="property"><span class="property-name">font-family:</span> {{ style.family }}</div>
+            <div class="property"><span class="property-name">font-size:</span> {{ style.size }}</div>
+            <div class="property"><span class="property-name">font-weight:</span> {{ style.weight }}</div>
+            <div class="property"><span class="property-name">line-height:</span> {{ style.lineHeight }}</div>
+          </div>
+          <div class="typography-variable">{{ style.variable }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
